@@ -10,15 +10,16 @@
     "lint": "eslint ."
   },
   "devDependencies": {
-    "@nuxt-themes/alpine": "^1.6.5",
-    "@nuxt/content": "^2.8.2",
-    "@nuxt/devtools": "^0.6.7",
-    "@nuxt/eslint-config": "^0.1.1",
-    "@nuxthq/studio": "^0.14.0",
-    "@nuxtjs/plausible": "^0.2.1",
-    "@types/node": "^20.4.0",
-    "eslint": "^8.44.0",
-    "nuxt": "^3.9.1"
+    "@nuxt-themes/alpine": "^1.6.6",
+    "@nuxt/content": "^3.2.2",
+    "@nuxt/devtools": "^2.1.0",
+    "@nuxt/eslint": "1.1.0",
+    "@nuxthq/studio": "^2.2.1",
+    "@nuxtjs/plausible": "^1.2.0",
+    "@types/node": "^22.13.5",
+    "eslint": "^9.0.0",
+    "nuxt": "^3.15.4",
+    "typescript": "^5.7.3"
   },
-  "packageManager": "pnpm@10.5.2+sha512.da9dc28cd3ff40d0592188235ab25d3202add8a207afbedc682220e4a0029ffbff4562102b9e6e46b4e3f9e8bd53e6d05de48544b0c57d4b0179e22c76d1199b"
+  "packageManager": "pnpm@10.5.2"
 }
