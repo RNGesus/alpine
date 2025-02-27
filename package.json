@@ -4,22 +4,40 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "dev": "nuxi dev",
-    "build": "nuxi build",
-    "generate": "nuxi generate",
-    "preview": "nuxi preview",
-    "lint": "eslint ."
+    "automd": "automd",
+    "build": "nuxt build",
+    "dev": "nuxt dev",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare",
+    "typecheck": "tsc --noEmit",
+    "start": "node .output/server/index.mjs",
+    "deploy": "nuxthub deploy",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix"
   },
   "devDependencies": {
-    "@nuxt-themes/alpine": "^1.6.6",
     "@nuxt/content": "^3.2.2",
     "@nuxt/devtools": "^2.1.0",
     "@nuxt/eslint": "1.1.0",
+    "@nuxt/image": "1.9.0",
+    "@nuxt/scripts": "0.10.5",
+    "@nuxt/ui": "3.0.0-alpha.13",
+    "@nuxtjs/i18n": "9.2.1",
     "@nuxtjs/plausible": "^1.2.0",
+    "@nuxtjs/seo": "^2.2.0",
     "@types/node": "^22.13.5",
+    "@vueuse/core": "12.7.0",
+    "@vueuse/nuxt": "12.7.0",
+    "automd": "0.3.12",
     "eslint": "^9.21.0",
     "nuxt": "^3.15.4",
-    "typescript": "^5.7.3"
+    "resend": "4.1.2",
+    "sitemap": "8.0.0",
+    "typescript": "^5.7.3",
+    "ufo": "^1.5.4",
+    "vue-sonner": "1.3.0",
+    "wrangler": "^3.111.0"
   },
   "packageManager": "pnpm@10.5.2",
   "pnpm": {
@@ -27,7 +45,9 @@
       "@parcel/watcher",
       "better-sqlite3",
       "esbuild",
-      "vue-demi"
+      "sharp",
+      "vue-demi",
+      "workerd"
     ]
   }
 }
