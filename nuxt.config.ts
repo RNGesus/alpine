@@ -3,7 +3,6 @@ export default defineNuxtConfig({
     preference: "dark",
     fallback: "dark",
   },
-  extends: "@nuxt-themes/alpine",
   content: {
     renderer: {
       anchorLinks: false,
@@ -19,13 +18,19 @@ export default defineNuxtConfig({
     },
   },
   modules: [
-    // https://github.com/nuxt-modules/plausible
-    // https://github.com/nuxt/devtools
+    "@vueuse/nuxt",
+    "@nuxt/ui",
+    "@nuxtjs/i18n",
+    "@nuxtjs/seo",
     "@nuxtjs/plausible",
     "@nuxt/devtools",
     "@nuxt/eslint",
     "@nuxt/content",
+    "@nuxt/image",
+    "@nuxt/scripts",
   ],
+
+  css: ["~/assets/style/main.css"],
 
   mdc: {
     highlight: {
@@ -111,5 +116,18 @@ export default defineNuxtConfig({
 
   ogImage: {
     zeroRuntime: true,
+  },
+
+  imports: {
+    presets: [
+      {
+        from: "vue-sonner",
+        imports: ["toast"],
+      },
+    ],
+  },
+
+  devtools: {
+    enabled: true,
   },
 });
